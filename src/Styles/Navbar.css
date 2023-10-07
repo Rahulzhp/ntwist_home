@@ -1,10 +1,11 @@
 .container {
-    background-image: url("../Images/home-image-bg-v6.png");
+    background-image: url("../Images/bg.png");
     background-repeat: no-repeat;
-    min-height: 170px;
-    background-position: 40%;
-    background-size: 245%;
-    position: relative;
+    min-height: 659px;
+
+    background-position: 39%;
+    background-size: 240%;
+    position: absolute;
 }
 
 .navbar {
@@ -16,14 +17,14 @@
     background: 0 0;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 11;
     color: #f5f2f0;
 
 }
 
 .navbar.scrolled {
     background: linear-gradient(180deg, rgba(254, 255, 255, 0.8), rgba(24, 28, 41, .92) 100%, rgba(24, 28, 41, .92) 0);
-    box-shadow: 0 12px 16px rgba(37, 39, 44, .2);
+
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
 
@@ -32,7 +33,8 @@
 
 .navItem {
     margin-left: 2px;
-    width: 55%;
+    width: 65%;
+
 
 }
 
@@ -43,11 +45,19 @@
     align-items: center;
     margin-right: 2px;
     color: white;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 550;
     font-family: sans-serif;
+    letter-spacing: 0.3px;
 
 
+
+}
+
+.home_text>button {
+    padding: 9px 27px;
+    margin-top: 17px;
+    background-color: #2171c0;
 }
 
 .pages>p:hover {
@@ -72,7 +82,7 @@
 
 .home_text>p {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 45px;
 }
 
@@ -96,11 +106,12 @@
 .content {
     background-color: #ecedf0;
     background-repeat: no-repeat;
-    min-height: 670px;
+    min-height: 600px;
     background-position: 50%;
     background-size: cover;
-    position: relative;
-    margin-top: 800px;
+    position: absolute;
+    margin-top: 593px;
+    max-height: 500000px;
 }
 
 .contentItem {
@@ -110,7 +121,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
-    margin-top: 599px;
+    margin-top: 545px;
     z-index: 1;
 
 }
@@ -219,7 +230,7 @@
 
 .midSection>div {
     width: 49%;
-    padding: 59px 45px;
+    padding: 47px 37px;
 }
 
 .midSection>div>h2 {
@@ -227,11 +238,23 @@
     font-weight: 500;
     color: orangered;
     margin-bottom: 17px;
+    margin-top: 25px;
+}
+
+.midSection>div>button {
+    background-color: orangered;
+    color: white;
+    font-size: 15px;
+
+    padding: 9px 25px;
+    border-radius: 5px;
 }
 
 .midSection>div>p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: #232527;
+    margin-bottom: 19px;
+
 
 }

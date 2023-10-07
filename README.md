@@ -1,7 +1,7 @@
 ### NTWIST Project ####
 
 
-![Ntwist project](https://github.com/Rahulzhp/ambula/assets/107567053/9f170ffc-7deb-49d1-a9d7-e4fb3782d321)
+![Ntwist project](https://github.com/Rahulzhp/ntwist_home/assets/107567053/8d0ca223-94a9-4478-a740-19dfd845225e)
 
 # Clone of NTWIST
 
@@ -25,12 +25,12 @@ To make this clone we have used HTMl, CSS and JavaScript, ReactJS for front-end.
 
 # Snapshots of Our Project 📸
 
-## To-do page
--Desktop View
-<img width="710" alt="image" src="https://github.com/Rahulzhp/ambula/assets/107567053/56d2254f-d984-4850-8049-a15a68d98f46" />
+## Header Section
+<img width="710" alt="image" src="https://github.com/Rahulzhp/ntwist_home/assets/107567053/5750a9f6-6a49-405c-bafc-61c4cc34e69b" />
 
-## Cart page
--Desktop View
-<img width="710" alt="image" src="https://github.com/Rahulzhp/ambula/assets/107567053/184ea325-4dfa-4479-9851-7c1a663e6ba8" />
+## Footer Section
+
+<img width="710" alt="image" src="https://github.com/Rahulzhp/ntwist_home/assets/107567053/f7d2f126-23b0-4e38-bbac-ad638eb6033b" />
+
 
 

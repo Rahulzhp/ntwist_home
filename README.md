@@ -26,6 +26,7 @@ To make this clone we have used HTMl, CSS and JavaScript, ReactJS for front-end.
 # Snapshots of Our Project 📸
 
 ## Header Section
+
 <img width="710" alt="image" src="https://github.com/Rahulzhp/ntwist_home/assets/107567053/5750a9f6-6a49-405c-bafc-61c4cc34e69b" />
 
 ## Footer Section

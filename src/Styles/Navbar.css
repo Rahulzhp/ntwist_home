@@ -1,31 +1,44 @@
+.container {
+    background-image: url("../Images/home-image-bg-v6.png");
+    background-repeat: no-repeat;
+    min-height: 170px;
+    background-position: 40%;
+    background-size: 245%;
+    position: relative;
+}
+
 .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 20px;
+    padding: 11px 55px;
     background: 0 0;
-    background-color: #5f4c4c;
     position: sticky;
     top: 0;
     z-index: 5;
     color: #f5f2f0;
+
 }
 
 .navbar.scrolled {
-    background: linear-gradient(180deg, rgba(175, 51, 14, 0.8), rgba(24, 28, 41, .92) 100%, rgba(24, 28, 41, .92) 0);
-    box-shadow: 0 12px 16px rgba(243, 107, 29, 0.2);
+    background: linear-gradient(180deg, rgba(254, 255, 255, 0.8), rgba(24, 28, 41, .92) 100%, rgba(24, 28, 41, .92) 0);
+    box-shadow: 0 12px 16px rgba(37, 39, 44, .2);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
+
+
 }
 
-.navbar>div {
+.navItem {
     margin-left: 2px;
+    width: 55%;
+
 }
 
 .pages {
     display: flex;
-    gap: 57px;
+    gap: 37px;
     justify-content: space-between;
     align-items: center;
     margin-right: 2px;
@@ -33,28 +46,192 @@
     font-size: 15px;
     font-weight: 400;
     font-family: sans-serif;
+
+
 }
 
-.pages a {
-    color: white;
-    text-decoration: none;
-}
-
-.pages a:hover {
+.pages>p:hover {
     font-size: 15px;
-    color: bisque;
 }
 
-.navuser {
+.home {
+    position: absolute;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 59px;
+    margin-top: 87px;
     display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.home_text {
+    width: 43%;
+    padding-top: 155px;
+}
+
+.home_text>p {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.homeLogo {
+    width: 55%;
+}
+
+.homeLogo>img {
+    width: 100%;
+    padding-right: 30px;
+}
+
+.home h3 {
+    margin-top: 13px;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+}
+
+
+.content {
+    background-color: #ecedf0;
+    background-repeat: no-repeat;
+    min-height: 670px;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+    margin-top: 800px;
+}
+
+.contentItem {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 599px;
+    z-index: 1;
+
+}
+
+.contentItem>div {
+    width: 20%;
+    color: white;
+    background-color: #232527;
+    border-radius: 21px;
+}
+
+.smlItem {
+    display: flex;
+    justify-content: space-around;
+    height: 245px;
+}
+
+.brain {
+    width: 33%;
+    display: flex;
+    margin-top: -115px;
     justify-content: center;
     align-items: center;
 }
 
-.navuser>img {
+.brain>img {
+    width: 60%;
+    color: #f5f2f0;
+    background-color: #f5f2f0;
+    padding: 1px;
+}
+
+.heddiv {
+    width: 70%;
+    margin-top: 27px;
+    padding-left: 13px;
+    padding-right: 19px;
+    margin-bottom: 29px;
+}
+
+.heddiv>h1 {
+    font-size: 21px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heddiv>p {
+    color: hsla(24, 20%, 95%, .7);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: initial;
+}
+
+.Slrvideo {
+    padding-top: 245px;
+}
+
+.Slrvideo>div {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.Slrheading {
+    color: #f5f2f0;
+    width: 47%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Slrheading>div>h2 {
+    font-size: 29px;
+    font-weight: 400;
+    color: #f5f2f0;
+    letter-spacing: 0.6px;
+
+}
+
+.Slrheading>div>h1 {
+    font-size: 43px;
+    font-weight: 900;
+    color: #f5f2f0;
+    letter-spacing: 0.9px;
+    margin-bottom: 9px;
+}
+
+.Slrheading>div>p {
+    font-size: 15px;
+    font-weight: 50;
+    line-height: 25px;
+    margin-top: 19px;
+    margin-bottom: 25px;
+}
+
+.video {
     width: 37%;
 }
 
-.navuser>:first-child {
-    width: 35%;
+.midSection {
+    display: flex;
+}
+
+.midSection>div {
+    width: 49%;
+    padding: 59px 45px;
+}
+
+.midSection>div>h2 {
+    font-size: 39px;
+    font-weight: 500;
+    color: orangered;
+    margin-bottom: 17px;
+}
+
+.midSection>div>p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #232527;
+
 }

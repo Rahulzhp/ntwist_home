@@ -5,7 +5,7 @@
 
 # Clone of NTWIST
 
-Deployed Link - https://strong-otter-05c745.netlify.app/
+Deployed Link - https://652197788905831d531402a3--resplendent-bublanina-d03fe8.netlify.app/
 
 
 

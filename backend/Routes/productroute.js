@@ -18,7 +18,7 @@ productRoute.get('/', async (req, res) => {
             const searchFields = ['title', 'color'];
 
             if (!isNaN(search)) {
-                // If the search query is a number, handle it as an exact match for year and price
+
                 filter.$or = [
                     { year: parseInt(search) },
                     { price: parseFloat(search) },
@@ -26,7 +26,7 @@ productRoute.get('/', async (req, res) => {
                     { max_speed: parseFloat(search) },
                 ];
             } else {
-                // Create a case-insensitive regular expression search for specified fields
+
                 filter.$or = searchFields.map((field) => ({
                     [field]: { $regex: search, $options: 'i' },
                 }));
@@ -46,6 +46,24 @@ productRoute.get('/', async (req, res) => {
     }
 });
 //Get SingleProduct
+
+// Sort Products by Price
+productRoute.get('/sort', async (req, res) => {
+    const { sort, order } = req.query;
+
+    try {
+        const sortOrder = order === 'desc' ? -1 : 1;
+        const sortField = sort || 'price'; // Default to sorting by price if no field is specified
+
+        const sortedProducts = await ProductModel.find({})
+            .sort({ [sortField]: sortOrder });
+
+        res.status(200).json(sortedProducts);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 
 productRoute.get("/:id", async (req, res) => {
     let id = req.params.id
@@ -74,7 +92,7 @@ productRoute.patch('/:id', async (req, res) => {
     const updatedData = req.body;
 
     try {
-        // Find the product by ID and update it
+
         const updatedProduct = await ProductModel.findByIdAndUpdate(productId, updatedData, { new: true });
 
         if (!updatedProduct) {
@@ -91,14 +109,14 @@ productRoute.delete('/:id', async (req, res) => {
     const productId = req.params.id;
 
     try {
-        // Find the product by ID and delete it
+
         const deletedProduct = await ProductModel.findByIdAndDelete(productId);
 
         if (!deletedProduct) {
             return res.status(404).json({ message: 'Product not found' });
         }
 
-        res.status(204).send(); // 204 No Content: The request was successful, and there is no response entity.
+        res.status(204).send({ msg: "deleted" });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }

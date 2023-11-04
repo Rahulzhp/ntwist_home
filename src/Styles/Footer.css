@@ -74,3 +74,75 @@
     font-size: 15px;
     font-weight: 400;
 }
+
+.maindiv {
+    height: 650px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maindiv>div {
+    width: 791px;
+    height: 145px;
+    display: flex;
+    border: 1px solid rgb(62, 139, 139);
+    background-image: url("https://cdn.wedevs.com/uploads/2018/12/Increase-the-Click-through-Rate-with-These-11-Call-to-Action-in-Writing.png");
+    background-repeat: no-repeat;
+    min-height: 145px;
+    background-position-y: -245px;
+    background-size: 100%;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.cta-button:hover {
+    background-color: #924030;
+    transform: scale(1.05);
+}
+
+.btndiv {
+    width: 33%;
+    padding-top: 51px;
+    padding-left: 59px;
+
+}
+
+.headdiv {
+    width: 72%;
+    padding: 49px 27px;
+    height: 103px;
+}
+
+.headdiv>h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: 0.9px;
+    text-shadow: 0.9px 0.9px black;
+
+}
+
+.headdiv>p {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-size: 23px;
+    padding-top: -2px;
+    text-shadow: 0.5px 0.5px black;
+}

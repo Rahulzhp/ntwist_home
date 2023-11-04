@@ -5,7 +5,7 @@ const { connection } = require("./Config/db");
 const { usersRoute } = require("./Routes/userroute")
 const { productRoute } = require("./Routes/productroute")
 
-const { authenticate } = require("./Middleware/auth")
+
 require('dotenv').config()
 
 
